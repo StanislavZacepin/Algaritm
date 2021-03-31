@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Algaritm_Dz.dz1_1;
+using Algaritm_Dz.ServiceDz;
 
 namespace Algaritm_Dz
 {
@@ -11,7 +7,21 @@ namespace Algaritm_Dz
     {
         static void Main(string[] args)
         {
-            Dz1_1.Dz1();
+            int selection;
+            ServiceMenu serviceMenu;
+
+            Console.WriteLine("Ведите число дз которое вас интересует. Выход когда видете 0");
+            do
+            {
+                selection = int.Parse(Console.ReadLine());
+                serviceMenu = new ServiceMenu(selection);
+                if (selection != 0) serviceMenu.StartMenu();
+
+
+            } while (selection != 0);
+            
+
+
 
 
         }
