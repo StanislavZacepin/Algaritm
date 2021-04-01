@@ -27,6 +27,9 @@ namespace Algaritm_Dz.ServiceDz
                 case 2:
                     Dz1_2.StartDz(); //2. Найти максимальное из четырех чисел. Массивы не использовать.
                     break;
+                case 12:
+                    Dz1_12.Start(); //12.Написать функцию нахождения максимального из трех чисел.
+                    break;
                 default:
                     break;
             }

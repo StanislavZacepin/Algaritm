@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dz\dz1\Dz1_1.cs" />
+    <Compile Include="Dz\dz1\Dz1_12.cs" />
     <Compile Include="Dz\dz1\Dz1_2.cs" />
     <Compile Include="Dz\dz1\Dz1_3.cs" />
     <Compile Include="Program.cs" />

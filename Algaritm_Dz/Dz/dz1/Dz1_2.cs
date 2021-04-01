@@ -37,6 +37,7 @@ namespace Algaritm_Dz.Dz.dz1
         {
             numberMax = Math.Max(Math.Max(number1, number2), Math.Max(number3, number4));
 
+
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             Console.WriteLine("Максимальное число {0}",numberMax);
