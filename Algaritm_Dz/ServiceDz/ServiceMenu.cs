@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Algaritm_Dz.Dz.dz1;
+using System.IO;
 
 namespace Algaritm_Dz.ServiceDz
 {
@@ -11,6 +12,7 @@ namespace Algaritm_Dz.ServiceDz
     {
         private int i { get; set; }
 
+        
         public ServiceMenu(int i)
         {
             this.i = i;
@@ -20,12 +22,15 @@ namespace Algaritm_Dz.ServiceDz
             switch (i)
             {
                 case 1:
-                        Dz1_1.Dz1();
-                    break;  
-
+                        Dz1_1.Dz1(); //Рассчитать и вывести индекс массы тела по формуле I = m / (h * h); где m-масса тела в килограммах, h - рост в метрах
+                    break;
+                case 2:
+                    Dz1_2.StartDz(); //2. Найти максимальное из четырех чисел. Массивы не использовать.
+                    break;
                 default:
                     break;
             }
         }
+        
     }
 }

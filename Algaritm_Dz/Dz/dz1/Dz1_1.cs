@@ -7,9 +7,11 @@ namespace Algaritm_Dz.Dz.dz1
     {
         public static void Dz1()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
             Console.WriteLine("Введите вес");
 
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.White;
 
             float weight = float.Parse(Console.ReadLine());
 
@@ -18,15 +20,18 @@ namespace Algaritm_Dz.Dz.dz1
             Console.WriteLine("Введите рост");
 
 
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.White;
 
             float height = float.Parse(Console.ReadLine());
 
             float index = formula(weight, height);
 
+            Console.ForegroundColor = ConsoleColor.Green;
 
             Console.WriteLine($"Индекс масы тела {index} ");
-            Console.ReadKey();
+
+            Console.ForegroundColor = ConsoleColor.White;
+
         }
         static float formula(float m, float h)
         {
