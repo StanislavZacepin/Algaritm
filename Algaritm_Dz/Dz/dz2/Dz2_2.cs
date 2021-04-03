@@ -26,14 +26,14 @@ namespace Algaritm_Dz.Dz.dz2
             Console.ForegroundColor = ConsoleColor.White;
 
             возведения_числа_рекурсивно(Число, Степень);
-           
+           возведения_числа(Число, Степень);
         }
         public static  double возведения_числа_рекурсивно(double a, int b)
         {
             if (b == 1)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Число {Число} в степени {Степень} = {a}");
+                Console.WriteLine($"Число {Число} в степени {Степень} = {a} рекурсив");
                 Console.ForegroundColor = ConsoleColor.White;
                 return 1;
             }
@@ -41,11 +41,15 @@ namespace Algaritm_Dz.Dz.dz2
             return возведения_числа_рекурсивно(Число*a, b - 1);
         }
 
-        public static double возведения_числа(double a, int b)
+        public static void возведения_числа(double a, int b)
         {
+            double otv = a;
+            for (int i = 1; i < b; i++)
+            {
+                otv *= a;
+            }
 
-            return a;
-           
+            Console.WriteLine($"Число {Число} в степени {Степень} = {otv}");
         }
     }
 }
