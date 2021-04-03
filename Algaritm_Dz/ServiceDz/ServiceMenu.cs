@@ -34,6 +34,9 @@ namespace Algaritm_Dz.ServiceDz
                 case 21:
                     Dz2_1.Start(); //21. Реализовать функцию перевода из десятичной системы в двоичную, используя рекурсию.
                     break;
+                case 22:
+                    Dz2_2.Start();//22. Реализовать функцию возведения числа a в степень b:
+                    break;
                 default:
                     break;
             }
