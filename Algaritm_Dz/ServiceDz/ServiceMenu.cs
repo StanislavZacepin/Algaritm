@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Algaritm_Dz.Dz.dz1;
 using System.IO;
+using Algaritm_Dz.Dz.dz2;
 
 namespace Algaritm_Dz.ServiceDz
 {
@@ -29,6 +30,9 @@ namespace Algaritm_Dz.ServiceDz
                     break;
                 case 12:
                     Dz1_12.Start(); //12.Написать функцию нахождения максимального из трех чисел.
+                    break;
+                case 21:
+                    Dz2_1.Start(); //21. Реализовать функцию перевода из десятичной системы в двоичную, используя рекурсию.
                     break;
                 default:
                     break;

@@ -35,6 +35,7 @@ namespace Algaritm_Dz
                 {
                     selection = 0;
                     Console.WriteLine("Неверный формат");
+                    Console.ReadKey();
                 }
               
 
