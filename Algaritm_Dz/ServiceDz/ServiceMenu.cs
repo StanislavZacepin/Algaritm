@@ -7,6 +7,7 @@ using Algaritm_Dz.Dz.dz1;
 using System.IO;
 using Algaritm_Dz.Dz.dz2;
 using Algaritm_Dz.Dz.dz3;
+using Algaritm_Dz.Dz.dz4;
 
 namespace Algaritm_Dz.ServiceDz
 {
@@ -51,6 +52,15 @@ namespace Algaritm_Dz.ServiceDz
                 case 31:
                     clearConsole();
                     Dz3_1.Start();//31. Попробовать оптимизировать пузырьковую сортировку. Сравнить количество операций сравнения оптимизированной и не оптимизированной программы. Написать функции сортировки, которые возвращают количество операций.
+                    break;
+                case 41:
+                    clearConsole(); //  Зацепин С.С.  1. * Количество маршрутов с препятствиями.Реализовать чтение массива с препятствием и нахождение количество маршрутов.
+                                    //Например, карта:
+                                    //3 3
+                                    //1 1 1
+                                    //0 1 0
+                                    //0 1 0
+                    Dz4_1.Start(); 
                     break;
                 default:
                     break;
