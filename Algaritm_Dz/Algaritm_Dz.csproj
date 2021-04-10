@@ -51,6 +51,7 @@
     <Compile Include="Dz\dz2\Dz2_2.cs" />
     <Compile Include="Dz\dz3\Dz3_1.cs" />
     <Compile Include="Dz\dz4\Dz4_1.cs" />
+    <Compile Include="Dz\dz4\Dz4_2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceDz\ListMenu.cs" />

@@ -62,6 +62,9 @@ namespace Algaritm_Dz.ServiceDz
                                     //0 1 0
                     Dz4_1.Start(); 
                     break;
+                case 42:
+                    Dz4_2.Start();//42. Решить задачу о нахождении длины максимальной последовательности с помощью матрицы.
+                    break;
                 default:
                     break;
             }
