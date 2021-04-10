@@ -13,21 +13,21 @@ namespace Algaritm_Dz.Dz.dz4
 		static char[] x = new char[20];
 		static char[] y = new char[20];
 		static char[,] b = new char[20,20];
-		//static void printer(int[,] mass, int n, int m)
-		//{
+        static void printer(int[,] mass, int n, int m)
+        {
 
-		//	for (int i = 0; i < n; i++)
-		//	{
-		//		for (int j = 0; j < m; j++)
-		//		{
-		//			Console.Write(String.Format(" {0,3} ", mass[i, j]));
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write(String.Format(" {0,3} ", mass[i, j]));
 
-		//		}
-		//		Console.WriteLine();
-		//	}
-		//	Console.WriteLine("------------------------------");
-		//}
-		static void  print(int i, int j)
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("------------------------------");
+        }
+        static void  print(int i, int j)
 		{
 			if (i == 0 || j == 0)
 				return;
@@ -87,6 +87,7 @@ namespace Algaritm_Dz.Dz.dz4
 			Console.WriteLine("The Longest Common Subsequence is ");
 			lcs();
 			print(m, n);
+			printer(c, n, m);2
 			
 			
 		}
