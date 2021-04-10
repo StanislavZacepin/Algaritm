@@ -13,7 +13,10 @@ namespace Algaritm_Dz.Dz.dz3
         static int countSwap = 0;// счетчик свапв
 
         static int cointSravnenia = 0; // счетчик сравнения 
-         static void printer(int [] mass)
+
+       
+
+         static void printer( int [] mass)
         {
         
             foreach (var item in mass)
@@ -24,7 +27,7 @@ namespace Algaritm_Dz.Dz.dz3
             Console.WriteLine("____________");
         }
 
-         static void swap(ref int one, ref int two)
+         static void swap(ref int one, ref  int two)
         {
             int swap = one;
             one = two;
@@ -45,7 +48,7 @@ namespace Algaritm_Dz.Dz.dz3
            
         }
 
-        static void Sortirovka(ref int [] massiv)
+        static void Sortirovka( int [] massiv)
         {
             for (int i = 0; i < massiv.Length; i++)
             {
@@ -56,13 +59,51 @@ namespace Algaritm_Dz.Dz.dz3
                     cointSravnenia++;
                     if (massiv[j] > massiv[j + 1])
                     {
-                        swap(ref massiv[j], ref massiv[j + 1]);
+                        swap(ref massiv[j],ref  massiv[j + 1]);
 
                         flag = true;
                     }
                 }
 
                 printer(massiv);
+                if (flag == false) break;
+            }
+           
+            Console.WriteLine("сравнивалось={0} Менялось местами={1}", cointSravnenia , countSwap);
+            cointSravnenia = 0;
+            countSwap = 0;
+        }
+        
+        static void SortirovkaHeyk( int [] massiv)
+        {
+            Console.WriteLine("Шейкер");
+
+            for (int i = 0; i < massiv.Length; i++)
+            {
+                bool flag = false;
+
+                for (int j = 0; j < massiv.Length-1; j++)
+                {
+                    cointSravnenia++;
+                    if (massiv[j] > massiv[j + 1])
+                    {
+                        swap(ref massiv[j],ref  massiv[j + 1]);
+                        printer(massiv);
+                        flag = true;
+                    }
+                }
+                for (int j = massiv.Length-1; j > massiv.Length; j--)
+                {
+                    cointSravnenia++;
+                    if (massiv[j-1] > massiv[j])
+                    {
+                        swap(ref massiv[j-1], ref massiv[j]);
+                        printer(massiv);
+                        flag = true;
+                    }
+                }
+
+                
                 if (flag == false) break;
             }
             Console.WriteLine("сравнивалось={0} Менялось местами={1}", cointSravnenia , countSwap);
@@ -83,7 +124,8 @@ namespace Algaritm_Dz.Dz.dz3
 
             Console.WriteLine("масив после сортировки");
 
-            Sortirovka(ref massiv);
+           // Sortirovka( massiv);
+            SortirovkaHeyk(massiv);
 
         }
     }
