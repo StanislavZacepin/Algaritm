@@ -8,6 +8,7 @@ using System.IO;
 using Algaritm_Dz.Dz.dz2;
 using Algaritm_Dz.Dz.dz3;
 using Algaritm_Dz.Dz.dz4;
+using Algaritm_Dz.Dz.dz5;
 
 namespace Algaritm_Dz.ServiceDz
 {
@@ -64,6 +65,9 @@ namespace Algaritm_Dz.ServiceDz
                     break;
                 case 42:
                     Dz4_2.Start();//42. Решить задачу о нахождении длины максимальной последовательности с помощью матрицы.
+                    break;
+                case 51:
+                    Dz5_1.Start();//51. Реализовать перевод из десятичной в двоичную систему счисления с использованием стека.
                     break;
                 default:
                     break;

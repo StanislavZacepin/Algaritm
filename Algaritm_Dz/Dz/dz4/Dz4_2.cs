@@ -87,7 +87,7 @@ namespace Algaritm_Dz.Dz.dz4
 			Console.WriteLine("The Longest Common Subsequence is ");
 			lcs();
 			print(m, n);
-			printer(c, n, m);2
+			printer(c, n, m);
 			
 			
 		}
