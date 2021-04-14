@@ -16,7 +16,7 @@ namespace Algaritm_Dz.Dz.dz1
         static int numberMax { get; set; }
 
         static int count = 0;
-        public static void StartDz()
+        public static void Start()
         {
            print();
            number1 = int.Parse(Console.ReadLine());
@@ -30,10 +30,10 @@ namespace Algaritm_Dz.Dz.dz1
             print();
             number4 = int.Parse(Console.ReadLine());
 
-            start();
+            startDz();
         }
        
-        public static void start()
+        public static void startDz()
         {
             numberMax = Math.Max(Math.Max(number1, number2), Math.Max(number3, number4));
 
