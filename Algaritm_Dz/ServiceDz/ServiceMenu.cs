@@ -9,6 +9,7 @@ using Algaritm_Dz.Dz.dz2;
 using Algaritm_Dz.Dz.dz3;
 using Algaritm_Dz.Dz.dz4;
 using Algaritm_Dz.Dz.dz5;
+using Algaritm_Dz.Dz.dz6;
 
 namespace Algaritm_Dz.ServiceDz
 {
@@ -80,7 +81,11 @@ namespace Algaritm_Dz.ServiceDz
                     Dz5_3.Start();//53. Написать программу, которая определяет, является ли введенная скобочная последовательность правильной. Примеры правильных скобочных выражений: (), ([])(), {}(), ([{}]), неправильных — )(, ())({), (, ])}), ([(]) для скобок [,(,{.
                 //Например: (2 + (2 * 2)) или[2 /{ 5 * (4 + 7)}]
                     break;
-                default:
+                case 61:
+                    clearConsole();
+                    Dz6_1.Start();//61. Реализовать простейшую хеш-функцию. На вход функции подается строка, на выходе сумма кодов символов.
+                    break;
+                     default:
                     break;
             }
         }
