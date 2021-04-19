@@ -8,20 +8,28 @@ namespace Algaritm_Dz.Dz.dz5
 {
    static public class Dz5_3
     {
+        static bool TestParenthesis(string source)
+        {
+            Stack<int> stack = new Stack<int>();
+            foreach (char character in source)
+            {
+                int index = "([{)]}".IndexOf(character);
+                if (index >= 3)
+                {
+                    if (stack.Count == 0 || stack.Pop() != index) return false;
+                }
+                else if (index >= 0) stack.Push(index + 3);
+            }
+            return stack.Count == 0;
+        }
         static public void Start()
         {
-            Stack<char> stack = new Stack<char>();
-            Console.Write("Введите строку: ");
-            string str = Console.ReadLine();
-
-            for (int i = 0; i < str.Length; i++)
-                if (str[i] == '(')
-                    stack.Push('(');
-                else if (str[i] == ')' & stack.Count > 0)
-                    stack.Pop();
-
-            Console.WriteLine((stack.Count == 0) ? "Выражение верное." : "Выражение не верное!");
+            string goodSource = "{[]}[]()";
+            Console.WriteLine(TestParenthesis(goodSource));
+            string basSource = "{[]}[])";
+            Console.WriteLine(TestParenthesis(basSource));
             Console.ReadKey();
         }
     }
-}
+    }
+
