@@ -85,7 +85,11 @@ namespace Algaritm_Dz.ServiceDz
                     clearConsole();
                     Dz6_1.Start();//61. Реализовать простейшую хеш-функцию. На вход функции подается строка, на выходе сумма кодов символов.
                     break;
-                     default:
+                case 62:
+                    clearConsole();
+                    Dz6_2.Start(); //2. Переписать программу, реализующую двоичное дерево поиска.
+                    break;
+                default:
                     break;
             }
         }
