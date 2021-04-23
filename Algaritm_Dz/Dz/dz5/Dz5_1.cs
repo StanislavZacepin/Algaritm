@@ -34,7 +34,7 @@ namespace Algaritm_Dz.Dz.dz5
             else if (b == 0) Masiv.Push(0);
             return С_десятичной_Перевод_в_Двоичную(i / 2);
         }
-        static void printer(Stack<int> asiv)
+        static void printer(Stack<int> Masiv)
         {
             foreach (var item in Masiv)
             {

@@ -10,6 +10,7 @@ using Algaritm_Dz.Dz.dz3;
 using Algaritm_Dz.Dz.dz4;
 using Algaritm_Dz.Dz.dz5;
 using Algaritm_Dz.Dz.dz6;
+using Algaritm_Dz.Dz.dz7;
 
 namespace Algaritm_Dz.ServiceDz
 {
@@ -88,6 +89,10 @@ namespace Algaritm_Dz.ServiceDz
                 case 62:
                     clearConsole();
                     Dz6_2.Start(); //2. Переписать программу, реализующую двоичное дерево поиска.
+                    break;
+                case 71:
+                    clearConsole();
+                    Dz7_1.Start();//71. Написать функции, которые считывают матрицу смежности из файла и выводят ее на экран.
                     break;
                 default:
                     break;
