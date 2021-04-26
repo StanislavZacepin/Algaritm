@@ -11,6 +11,8 @@ namespace Algaritm_Dz.ServiceDz
     {
         private string listDz = "listDz.txt";
         private string[] massivDZ { get; set; }
+
+        int color = 12;
         public void createList()
         {
 
@@ -28,6 +30,10 @@ namespace Algaritm_Dz.ServiceDz
             foreach (var item in massivDZ)
             {
                 Console.WriteLine(item);
+                ConsoleColor consoleColor = (ConsoleColor)color;
+                Console.ForegroundColor = consoleColor;
+                if (color == 14) color = 1;
+                color++;
             }
         }
     }

@@ -94,6 +94,10 @@ namespace Algaritm_Dz.ServiceDz
                     clearConsole();
                     Dz7_1.Start();//71. Написать функции, которые считывают матрицу смежности из файла и выводят ее на экран.
                     break;
+                case 72:
+                    clearConsole();
+                    Dz7_2.Start();//72. Написать рекурсивную функцию обхода графа в глубину.
+                    break;
                 default:
                     break;
             }
