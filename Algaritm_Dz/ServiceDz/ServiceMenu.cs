@@ -11,6 +11,7 @@ using Algaritm_Dz.Dz.dz4;
 using Algaritm_Dz.Dz.dz5;
 using Algaritm_Dz.Dz.dz6;
 using Algaritm_Dz.Dz.dz7;
+using Algaritm_Dz.Dz.dz8;
 
 namespace Algaritm_Dz.ServiceDz
 {
@@ -97,6 +98,14 @@ namespace Algaritm_Dz.ServiceDz
                 case 72:
                     clearConsole();
                     Dz7_2.Start();//72. Написать рекурсивную функцию обхода графа в глубину.
+                    break;
+                case 81:
+                    clearConsole();
+                    Dz8_1.Start();//81. Реализовать сортировку подсчетом.
+                    break;
+                case 82:
+                    clearConsole();
+                    Dz8_2.Start();//82. Реализовать быструю сортировку.
                     break;
                 default:
                     break;
